@@ -1,0 +1,144 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Start Bootstrap - SB Admin Version 2.0 Demo</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="{% static "app/css/bootstrap.min.css" %}"rel="stylesheet">
+    <link href="{% static "app/font-awesome/css/font-awesome.css" %}" rel="stylesheet">
+    <link href="{% static "app/css/main-theme.css" %}" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  DentaCare
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-left navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="/index/">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/about/clinic/">The Clinic</a></li>
+                            <li><a href="/about/team/">The Crew</a></li>
+                            <li><a href="/about/press/">In The Press</a></li>
+                            <li><a href="/about/events/">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/services/periodontics/">Periodontics</a></li>
+                            <li><a href="/services/dentistry">Specialized Dentistry</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Hub<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/patients/new/">New Patients</a></li>
+                            <li><a href="/patients/testimonials">Testimonials</a></li>
+                            <li><a href="/patients/login/">Sign Up / Login</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dental Updates<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/updates/announcements/">Announcements</a></li>
+                            <li><a href="/updates/blog/">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/appointments/">Appointments</a>
+                    </li>
+                    <li>
+                        <a href="/faq/">F.A.Q.</a>
+                    </li>
+                    <li>
+                        <a href="/contact/">Contact Us</a>
+                    </li> 
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <section id="login" class="container content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="login-panel panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Please Sign In</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form role="form">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                        </label>
+                                    </div>
+                                    <!-- Change this to a button or input when using this as a form -->
+                                    <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "footer">
+        <br>
+        <br>
+        <div class="foot-fixed-bottom">
+            <p align="center"> © 2013 Dentacare, Inc. | All Rights Reserved | Made with ♥ in NYC</p>
+        </div>
+        <br>
+    </section>
+    <!-- Core Scripts - Include with every page -->
+    <script src="{% static "app/js/jquery-1.10.2.js" %}"></script>
+    <script src="{% static "app/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "app/js/plugins/metisMenu/jquery.metisMenu.js" %}"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="{% static "app/js/sb-admin.js" %}"></script>
+    <script src="{% static "app/js/main-theme.js" %}"></script>
+
+</body>
+
+</html>
